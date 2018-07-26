@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Black&GoldParty2018</title>
+	<link rel="icon" href="assets/img/content/icon.png">
+	<!-- ========== CSS INCLUDES ========== -->
+	<link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+<style scoped>
+    .rsContent {
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+	<div class="page-loader">
+		 <div class="vertical-align align-center">
+			  <img src="assets/loader/loader.gif" alt="" class="loader-img">
+		 </div>
+	</div>
+
+	<!-- =============== START PLAYER ================ -->
+	<div class="main-music-player">
+		<a class="hide-player-button">
+			<i class="fa fa-plus"></i>
+			<i class="fa fa-minus"></i>
+		</a>
+		<div id="mesh-main-player" class="jp-jplayer" data-audio-src="assets/audio/flute.mp3" data-title="See right through ft. Fiora" data-artist="Tensnake"></div>
+		
+		<div id="mesh-main-player-content" class="mesh-main-player" role="application" aria-label="media player">
+			<div class="container">
+				<div class="row">
+					<div class="left-player-side">
+						<div class="mesh-prev">
+							<i class="fa fa-step-backward"></i>
+						</div>
+						<div class="mesh-play">
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="mesh-pause">
+							<i class="fa fa-pause"></i>
+						</div>
+						<div class="mesh-next">
+							<i class="fa fa-step-forward"></i>
+						</div>
+						<button id="playlist-toggle" class="jplayerButton">
+							<span class="span-1"></span>
+							<span class="span-2"></span>
+							<span class="span-3"></span>
+						</button>
+					</div>
+					<div class="center-side">
+						<div class="mesh-current-time">
+						</div>
+						<div class="mesh-seek-bar">
+							<div class="mesh-play-bar">
+							</div>
+						</div>
+						<div class="mesh-duration">
+						</div>
+					</div>
+					<div class="right-player-side">
+						<div class="mesh-thumbnail">
+							<img src="assets/img/albums/cover3.jpg" alt="">
+						</div>
+						<div class="mesh-title">
+						</div>
+						<div class="mesh-artist">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYER ================ -->
+
+	<!-- =============== START PLAYLIST ================ -->
+	<div class="playlist-wrapper" id="playlist-wrapper">
+		<div class="jp-playlist container">
+			<div class="about-list clearfix">
+				<span class="about-name">NAME</span>
+				<span class="about-length">LENGTH</span>
+				<span class="about-available">AVAILABLE ON</span>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/flute.mp3" data-artist="Tensnake" data-thumbnail="assets/img/albums/cover1.jpg" data-id="trak-200">
+				<audio preload="metadata" src="assets/audio/flute.mp3" title="See right through ft. Fiora"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Tensnake - See Right Through Ft. Fiora
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/2.mp3" data-artist="Jack U ft. Kiesza" data-thumbnail="assets/img/albums/cover2.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/2.mp3" title="Take You There"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Jack U ft. Kiesza - Take You There
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/3.mp3" data-artist="Bob Sinclair" data-thumbnail="assets/img/albums/cover3.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/3.mp3" title="Cinderella"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Bob Sinclair - Cinderella
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/4.mp3" data-artist="Yuna" data-thumbnail="assets/img/albums/cover4.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/4.mp3" title="Lullabies"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Yuna - Lullabies
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYLIST ================ -->
+	
+	<!-- =============== START TOP HEADER ================ -->
+	<div class="topHeader" >
+		<div class="header">
+			<div class="rightTopHeader">
+				
+				<!-- Open Menu Button -->
+				<!--a class="open-menu">
+					
+					<span class="span-1"></span>
+					<span class="span-2"></span>
+					<span class="span-3"></span>
+				</a-->
+			</div><!-- end rightTopHeader -->
+		</div><!-- end header -->
+		<!-- Menu Fixed Container -->
+		<div class="menu-fixed-container">
+			<!-- Menu Fixed Centred Container -->
+			<nav>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+				<!-- Menu Fixed Primary List -->
+				<ul>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="index.html">
+							home
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							About Us
+						</a>
+						
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="index.html">
+							events
+						</a>
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="#">
+							blog
+						</a>
+						
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="#">
+							gallery
+						</a>
+						
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="#">
+							contact
+						</a>
+					</li>
+				</ul>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div><!-- end menu-fixed-container -->
+		<!-- =============== STAR LOGO ================ -->
+		<div class="logo-container-top">
+			<a href="index.html"><img src="assets/img/logo/whiteLogo.png" alt="Aqura"></a>
+		</div><!-- end logo-container-top -->
+		<!-- =============== END LOGO ================ -->
+	</div><!-- end topHeader -->
+	<!-- =============== END TOP HEADER ================ -->
+
+	<!-- =============== START BREADCRUMB ================ -->
+	<section class="no-mb" id="top">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="before-FullscreenSlider"></div>
+				<div class="breadcrumb-fullscreen-parent sliderContainerBreadcrumb">
+					<div class="starTitle">
+											<h4>The Premium </h4>
+											<div class="grid__item">
+						                		<h1>
+								                	<a class="link link-yaku" href="#">
+														<span>B</span><span>L</span><span>A</span><span>C</span><span>K</span><br><span>&</span><br><span>G</span><span>O</span><span>L</span><span>D</span>						
+													</a>
+										        </h1>
+						                	</div>
+											<h4>Lux Affair</h4>
+										</div>
+					<div id="ava-slider" class="royalSlider  heroSlider rsMinW change-header-items-color">
+						<div class="rsContent" style="background-image: url(assets/img/RoyalSlider/royal05.jpg);">
+							<img class="rsImg" src="assets/img/RoyalSlider/royal05.jpg" alt="">
+						</div>
+						<div class="rsContent" style="background-image: url(assets/img/RoyalSlider/royal06.jpg);">
+							<img class="rsImg" src="assets/img/RoyalSlider/royal06.jpg" alt="">
+						</div>
+						<div class="rsContent" style="background-image: url(assets/img/RoyalSlider/royal010.jpg);">
+							<img class="rsImg" src="assets/img/RoyalSlider/royal09.jpg" alt="">
+						</div>
+						<div class="rsContent" style="background-image: url(assets/img/RoyalSlider/royal011.jpg);">
+							<img class="rsImg" src="assets/img/RoyalSlider/royal011.jpg" alt="">
+						</div>
+						<div class="rsContent" style="background-image: url(assets/img/RoyalSlider/royal012.jpg);">
+							<img class="rsImg" src="assets/img/RoyalSlider/royal2.jpg" alt="">
+						</div>
+						<div class="rsContent" style="background-image: url(assets/img/RoyalSlider/royal08.jpg);">
+							<img class="rsImg" src="assets/img/RoyalSlider/royal2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END BREADCRUMB ================ -->
+
+	
+	
+	<br><br><br><br><br><br><br>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="sectionTitle paddingBottom">
+						<span class="heading-t3"></span>
+						<h2><a href="#">About Us</a></h2>
+						<span class="heading-b3"></span>
+					</div><!-- end sectionTtile -->
+				</div><!-- end col-sm-12 -->
+			</div>		
+</section>
+	<!-- =============== START TWITTER SECTION ================ -->
+	<section class="padding background-properties" style="background-image: url(assets/img/starHomePage/star.jpg);">
+		<div class="twitter">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="twitterLogo">
+							<a href="#"><img src="assets/img/content/twitterLogo.png" alt="twitterLogo"></a>
+							<a href="#" class="linkTwitter">THE BLACK & GOLD  (THE B&G)</a>
+						</div>
+						<p> As rare as they come The Black & Gold experience is a series of events emerging around the country presented by Ambience Entertainment. </p><br>
+
+<p> Representing personage made of precious minerals of gold and platinum, of South Africa’s finest natural treasures. The Black & Gold experience is a true representation of the exceptional premium resources that lay under the soles of the real owners of the earth.
+</p>
+<br><p> The Black & Gold experience is a networking platform in the presence of a few precious jewels, the makings of refined sophistication, while enjoying the uncommon pleasantries.
+
+</p><p>The Black & Gold is an exclusive experience in the company of power elegance laminated by the golden light of success .
+</p><br><p>Join the opulent splendor while traveling with the distinguished taste of seasoned sumptuous sounds.</p><br><p>The Black & Gold Rare Affair,
+Where only the brave dare to PARTY!! 
+</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- =============== START PACKAGES COVER SECTION ================ -->
+	<section class="padding albumsHome">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="sectionTitle paddingBottom">
+						<span class="heading-t3"></span>
+						<h2><a href="#">Packages</a></h2>
+						<span class="heading-b3"></span>
+					</div><!-- end sectionTtile -->
+				</div><!-- end col-sm-12 -->
+			</div>
+			<div class="list-albums">
+				<ul class="list-feature col-md-12 col-xs-12 col-sm-12">
+                     
+                    <li class="col-md-3 col-sm-3 col-xs-12">
+							<div class="album-icon albumIcon3">
+								<span class="thumbs-album">
+									<a href="#"><img width="270" height="270" src="assets/img/content/albumCover3.png" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+									</span>
+								<span class="disk"></span>
+							</div>
+							<div class="name">
+								<a href="Black&Gold(MACUFE).pdf"><h3>Booklet</h3></a>								
+								<href="Black&Gold(MACUFE).pdf"><p>Download</p></a>								
+							</div>
+						</li>
+
+
+					<center><li class="col-md-3 col-sm-3 col-xs-12">
+						<div class="album-icon">
+							<span class="thumbs-album">
+								<a href="#"><img width="270" height="270" src="assets/img/content/albumCover.png" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+							</span>
+							<span class="disk"></span>
+						</div><!-- END ALBUM ICON -->
+						<div class="name">
+							<a href="#"><h3>PLATINUM</h3></a>						
+							<a href="#"><p>Package</p></a>								
+						</div><!-- end name -->
+					</li>
+									
+					<li class="col-md-3 col-sm-3 col-xs-12">
+						<div class="album-icon albumIcon1">
+							<span class="thumbs-album">
+								<a href="#"><img width="270" height="270" src="assets/img/content/albumCover1.png" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+							</span>
+							<span class="disk"></span>
+						</div>
+						<div class="name">
+							<a href="#"><h3>GOLD</h3></a>									
+							<a href="#"><p>Package</p></a>								
+						</div>
+						</li>
+						<li class="col-md-3 col-sm-3 col-xs-12">
+							<div class="album-icon albumIcon2">
+								<span class="thumbs-album">
+									<a href="#"><img width="270" height="270" src="assets/img/content/albumCover2.png" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+									</span>
+								<span class="disk"></span>
+							</div>
+							<div class="name">
+								<a href="#"><h3>SILVER</h3></a>								
+								<a href="#"><p>Package</p></a>								
+							</div>
+						</li></center>
+				</ul>
+			</div><!-- end list-albums -->
+		</div><!-- end container -->
+	</section>
+	<!-- =============== END PACKAGES COVER SECTION ================ -->
+
+	<!-- =============== END TWITTER SECTION ================ -->
+
+		<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="sectionTitle paddingBottom">
+						<span class="heading-t3"></span>
+						<h2><a href="#">Count Down</a></h2>
+						<span class="heading-b3"></span>
+					</div><!-- end sectionTtile -->
+				</div><!-- end col-sm-12 -->
+			</div>		
+</section>
+
+	
+	<!-- =============== START EVENTS SECTION-2 ================ -->
+
+	<section class="padding countdownSection background-properties" style="background-image: url(assets/img/events/Event.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="countdownTitle">
+						<h4>Next Event</h4>
+						<a href="file:///H:/Black&GoldParty/nextEvent.html"><img src="assets/img/events/box.png" alt="Event"></a>
+					</div>
+					<div class="sm-countdown sm_content_element sm-style2" id="sm_countdown-19" data-date="2017/10/07">
+						<div class="displayCounter">
+							<div class="column">
+								<div class="sm_countdown_inner">
+									<input class="element days" readonly="readonly" data-min="0" data-max="365" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+									<span class="unit days-title">days</span>
+								</div>
+							</div>	
+							<div class="column">
+								<div class="sm_countdown_inner">
+									<input class="element hour" readonly="readonly" data-min="0" data-max="24" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+									<span class="unit hours-title">hrs</span>
+								</div>
+							</div>	
+							<div class="column"> 
+								<div class="sm_countdown_inner">
+									<input class="element minute" readonly="readonly" data-min="0" data-max="60" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+									<span class="unit mins-title">min</span>
+								</div>
+							</div>
+							<div class="column"> 
+								<div class="sm_countdown_inner">
+									<input class="element second" readonly="readonly" data-min="0" data-max="60" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+									<span class="unit secs-title">sec</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- end sm-countdown -->
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- =============== END EVENTS SECTION-2 ================ -->
+
+	<!-- =============== START EVENTS SECTION-1 ================ -->
+	<!--section style="background-image: url(#);" class="background-properties paddingHomeEvents">
+		<div class="tableEvents">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="sectionTitle paddingBottom">
+							<span class="heading-t3"></span>
+							<h2><a href="events.html">RSVP</a></h2>
+							<span class="heading-b3"></span>
+						</div>< end sectionTtile >
+						<table>
+							<tr class="tableEventsTitle">
+								<th class="date">Date</th>
+								<th class="venue">Venue</th>
+								<th class="location">Location</th>
+								<th class="tickets">Tickets</th>
+								<th></th>
+							</tr>
+							<tr>
+								<!--<td class="aqura-date"><a href="#"><i class="fa fa-plus"></i></a><a href="#">8th OCT 2017 </a></td>
+								<td class="aqura-location"><a href="http://www.celebrationsfs.co.za/">Celebration Conference Center</a></td>
+								<td class="aqura-city"><a href="https://www.google.co.za/maps/dir/''/Celebrations+Wedding+%26+Conference+Venue/@-29.06235,26.0815311,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x1e8fdb9c4d98c59d:0xa1448180515ad5bc!2m2!1d26.1515714!2d-29.0623682">Macufe, Bloemfontein</a></td>
+								<td class="aqura-tickets"><a href="#">Tickets</a></td>
+								<td class="aqura-vip"><a href="#">RSVP</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section-->
+	<!-- =============== END EVENTS SECTION-1 ================ -->
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!-- =============== START HOME-BLOG SECTION ================ -->	
+	<section class="padding background-properties blogHomeSection" style="background-image: url(assets/img/blog/media-bg.png);">	
+		<div class="container">
+			<div class="row">
+				<div class="sectionTitle paddingBottom">
+					<span class="heading-t3"></span>
+					<h2><a href="blogGrid.html">Media</a></h2>
+					<span class="heading-b3"></span>
+				</div><!-- end sectionTtile -->
+				<div class="col-sm-4">
+					<div class="blogBox">	
+						<div class="imgBox"><img src="assets/img/blog/box-img.jpg" alt="box-img"></div>
+						<div class="blogBoxContent">
+							<div class="blogHeader">
+								<h1><a href="#">Press Reviews</a></h1>
+							</div>
+							<div class="admin-list clearfix">
+								<ul>
+									<li><a href="#">06 jul 2018</a>&nbsp;/&nbsp;</li>
+									<li><a href="#">By Admin</a></li>
+								</ul>
+							</div><!-- end admin-list -->
+							<div class="blogParagraph">
+								<p>Ambience Entertainment’s – Black and Gold VDJ After Party did it again! Popular for its exclusivity...</p>
+							</div><!--end blogParagraph  -->
+							<div class="rmButton">
+								<a href="http://weblogforlove.com/2018/07/ambience-entertainments-black-gold-vdj-party">Read More</a>
+							</div>			
+						</div><!-- end blogBoxContent -->
+					</div><!-- end blogBox -->
+				</div><!-- end col-sm-4 -->	
+				<div class="col-sm-4">
+					<div class="blogBox">	
+						<div class="videoBox"><iframe src="https://www.youtube.com/embed/0PxbynK0iGk?ecver=2" width="600" height="410"  ></iframe></div>
+						<div class="blogBoxContent">
+							<div class="blogHeader">
+								<h1><a href="blogSingle.html">Video Post</a></h1>
+							</div>
+							<div class="admin-list clearfix">
+								<ul>
+									<li><a href="#">17 aug 2017</a>&nbsp;/&nbsp;</li>
+									<li><a href="#">By Admin</a></li>
+								</ul>
+							</div><!-- end admin-list -->
+							<div class="blogParagraph">
+								<p>Ambience Entertainment presents The BlacknGold After Party  Macufe Edition on the 8th October 2017.This...</p>
+							</div><!--end blogParagraph  -->
+							<div class="rmButton">
+								<a href="https://www.youtube.com/watch?v=0PxbynK0iGk&feature=youtu.be">Read More</a>
+							</div>			
+						</div><!-- end blogBoxContent -->
+					</div><!-- end blogBox -->
+				</div><!-- end col-sm-4 -->	
+				<div class="col-sm-4">
+					<div class="blogBox">	
+						<div class="soundcloudBox"><iframe height="203" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/295707372&amp;color=ff5500&amp;show_artwork=false&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe></div>
+						<div class="blogBoxContent">
+							<div class="blogHeader">
+								<h1><a href="blogSingle.html">Soundcloud Post</a></h1>
+							</div>
+							<div class="admin-list clearfix">
+								<ul>
+									<li><a href="#">17 aug 2017</a>&nbsp;/&nbsp;</li>
+									<li><a href="#">By Admin</a></li>
+								</ul>
+							</div><!-- end admin-list -->
+							<div class="blogParagraph">
+								<p>Our Mix Of The Month (Black Motion Boiler Room and Ballantine's True Music South Africa Live Set...</p>
+							</div><!--end blogParagraph  -->
+							<div class="rmButton">
+								<a href="https://soundcloud.com/platform/black-motion-south-africa">Read More</a>
+							</div>			
+						</div><!-- end blogBoxContent -->
+					</div><!-- end blogBox -->
+				</div><!-- end col-sm-4 -->	
+			</div><!-- end container -->	
+		</div><!-- end row -->	
+	</section>
+	<!-- =============== END HOME-NLOG SECTION ================ -->	
+
+
+	<br><br><br><br>
+	<!-- =============== START GALLERY SECTION ================ -->
+
+		<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="sectionTitle paddingBottom">
+						<span class="heading-t3"></span>
+						<h2><a href="#">Gallery</a></h2>
+						<span class="heading-b3"></span>
+					</div><!-- end sectionTtile -->
+				</div><!-- end col-sm-12 -->
+			</div>		
+</section>
+
+	
+	<!-- =============== END GALLERY SECTION ================ -->
+
+	
+
+	<!-- =============== START GALLERY SECTION ================ -->
+	<section style="padding-bottom:0; padding-top:0;">
+		<div class="gallerySection">
+			<div class="container-fluid" style="padding:0;">
+				<div class="col-sm-12">
+					<!-- Content Container -->
+					<div class="content-container clearfix">
+						<!-- Single Album Container -->
+						<div class="single-photo-album-container">
+							<div class="row">
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<!-- Single Album Image -->
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/content/g8.jpg" alt="">
+												<div class="overlay">
+												   <a class="info lightbox" href="assets/img/bigGallery/g8.jpg"></a>
+												</div>
+											</div>
+										</figcaption>
+										<!-- Single Album View Button -->
+										
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/content/g7.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/bigGallery/g7.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/content/g12.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/bigGallery/g12.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/content/g10.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/bigGallery/g10.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/content/g13.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/bigGallery/g13.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/content/g9.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/bigGallery/g9.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end container -->
+		</div>
+	</section>
+	<!-- =============== END GALLERY SECTION ================ -->
+
+
+
+
+	<!-- =============== START FOOTER ================ -->
+	<section style="background-color:#eeeeee;">
+		<div class="footer footerPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="copyFooter">
+							<a href="#">&copy; 100% Ambience Ent 2017 | Website Designed by KasiKomm</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<nav class="social-icons">
+							<center><ul class="clearfix">
+								<li><a href="https://twitter.com/AmbienceEnt_SA" class="icon-button shopIcon"><i class="fa fa-twitter"></i><span></span></a></li>
+								<li><a href="https://www.facebook.com/Ambience-Entertainment-SA-488141491523248/?ref=br_rs" class="icon-button shopIcon"><i class="fa fa-facebook"></i><span></span></a></li>
+								<li><a href="https://www.instagram.com/ambienceentertainment/?hl=en" class="icon-button shopIcon"><i class="fa fa-instagram"></i><span></span></a></li>
+							</ul></center>
+						</nav>
+					</div>
+					<div class="col-sm-4">
+						<div class="goTop back-to-top" id="back-to-top">
+							<i class="fa fa-angle-up"></i>
+							<a href="#">Go Top</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END FOOTER ================ -->
+
+	<!-- ================================================== -->
+	<!-- =============== START JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+	<script src="assets/js/jPlayer.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/mainSlider.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="c2runtime.js"></script>
+
+	<!--[if lte IE 9 ]>
+		<script src="assets/js/placeholder.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	<!-- ================================================== -->
+	<!-- =============== END JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+	<!-- No Right Click Script -->
+<script language=JavaScript>
+<!--
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+// --> 
+</script>
+</body>
+
+
+</html>
